@@ -12,6 +12,12 @@ This firmware requires at least Arduino Mega level resources, although Teensy
 3.x level resources are preferred. Known to work with the Arduino Mega 2560,
 Teensy 3.2, Teensy 3.5, and Teensy 3.6.
 
+## Converting Between File Formats
+
+```shell
+pandoc -f markdown_github -t org -o README.org README.md
+```
+
 ## API NAMES
 
 ```json
