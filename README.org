@@ -1,32 +1,32 @@
 * ModularServer
 
-Authors:
+  Authors:
 
-#+BEGIN_EXAMPLE
-    Peter Polidoro <polidorop@janelia.hhmi.org>
-#+END_EXAMPLE
+  #+BEGIN_EXAMPLE
+      Peter Polidoro <polidorop@janelia.hhmi.org>
+  #+END_EXAMPLE
 
-License:
+  License:
 
-#+BEGIN_EXAMPLE
-    BSD
-#+END_EXAMPLE
+  #+BEGIN_EXAMPLE
+      BSD
+  #+END_EXAMPLE
 
-This firmware requires at least Arduino Mega level resources, although
-Teensy\\
-3.x level resources are preferred. Known to work with the Arduino Mega
-2560,\\
-Teensy 3.2, Teensy 3.5, and Teensy 3.6.
+  This firmware requires at least Arduino Mega level resources, although
+  Teensy\\
+  3.x level resources are preferred. Known to work with the Arduino Mega
+  2560,\\
+  Teensy 3.2, Teensy 3.5, and Teensy 3.6.
 
 ** Converting Between File Formats
 
-#+BEGIN_SRC sh
+   #+BEGIN_SRC sh
     pandoc -f markdown_github -t org -o README.org README.md
-#+END_SRC
+   #+END_SRC
 
 ** API NAMES
 
-#+BEGIN_SRC js
+   #+BEGIN_SRC js
     {
       "id":"getApi",
       "result":{
@@ -51,16 +51,16 @@ Teensy 3.2, Teensy 3.5, and Teensy 3.6.
         ]
       }
     }
-#+END_SRC
+   #+END_SRC
 
 ** API GENERAL
 
-[[./api/][API GENERAL]]
+   [[./api/][API GENERAL]]
 
 ** More Detailed Modular Device Information
 
-[[https://github.com/janelia-modular-devices/modular-devices][modular-devices]]
+   [[https://github.com/janelia-modular-devices/modular-devices][modular-devices]]
 
 ** Install Library Dependencies
 
-[[https://github.com/janelia-arduino/arduino-libraries][arduino-libraries]]
+   [[https://github.com/janelia-arduino/arduino-libraries][arduino-libraries]]
