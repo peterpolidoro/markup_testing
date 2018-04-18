@@ -16,35 +16,29 @@
   mkdir ./schematic/images
   convert -density 300 -depth 8 -quality 85 ./schematic/*.pdf ./schematic/images/schematic%02d.png
   for i in ./schematic/images/*.png; do
-    echo "[[file:$i]]"
+    echo "[[file:$i]]\n"
   done
 #+END_SRC
-
 * Gerbers
 
-Save gerber files and send to your favorite PCB manufacturer.
+Save gerbers zip file and send to your favorite PCB manufacturer for
+fabrication.
 
 #+BEGIN_SRC sh :exports results :results raw
   for i in ./gerbers/*.zip; do
     FILENAME=${i##*/}
     BASENAME=${FILENAME%.*}
-    echo "[[file:$i][$BASENAME]]"
+    echo "[[file:$i][$BASENAME]]\n"
   done
 #+END_SRC
-
 #+BEGIN_SRC sh :exports results :results raw
   rm -rf ./gerbers/images/
   mkdir ./gerbers/images
-  for i in ./gerbers/pdf/*.pdf; do
-    FILENAME=${i##*/}
-    BASENAME=${FILENAME%.*}
-    convert -density 300 -depth 8 -quality 85 $i ./gerbers/images/$BASENAME.png
-  done
+  convert -density 300 -depth 8 -quality 85 ./gerbers/*.pdf ./gerbers/images/gerbers%02d.png
   for i in ./gerbers/images/*.png; do
-    echo "[[file:$i]]"
+    echo "[[file:$i]]\n"
   done
 #+END_SRC
-
 * Bill of Materials
 
 #+BEGIN_SRC sh :exports results :results raw
