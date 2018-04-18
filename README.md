@@ -1,11 +1,11 @@
-- [Repository Information](#org7d8a3fc)
-- [Schematic](#orge5a877f)
-- [Gerbers](#org960c123)
-- [Bill of Materials](#orgb2996d1)
+- [Repository Information](#org39d8e50)
+- [Schematic](#org6ff73fc)
+- [Gerbers](#org3775994)
+- [Bill of Materials](#orgceaa1ac)
 
 
 
-<a id="org7d8a3fc"></a>
+<a id="org39d8e50"></a>
 
 # Repository Information
 
@@ -15,27 +15,29 @@
 -   **License:** Open-Source Hardware
 
 
-<a id="orge5a877f"></a>
+<a id="org6ff73fc"></a>
 
 # Schematic
+
+[modular\_device\_base\_3x2.pdf](./schematic/modular_device_base_3x2.pdf)
 
 ![img](./schematic/images/schematic00.png)
 
 
-<a id="org960c123"></a>
+<a id="org3775994"></a>
 
 # Gerbers
 
 Save gerbers zip file and send to your favorite PCB manufacturer for fabrication.
 
-[modular\_device\_base\_3x2\_v1.2](./gerbers/modular_device_base_3x2_v1.2.zip)
+[modular\_device\_base\_3x2\_v1.2.zip](./gerbers/modular_device_base_3x2_v1.2.zip)
 
 ![img](./gerbers/images/gerbers00.png)
 
 ![img](./gerbers/images/gerbers01.png)
 
 
-<a id="orgb2996d1"></a>
+<a id="orgceaa1ac"></a>
 
 # Bill of Materials
 

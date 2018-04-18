@@ -12,6 +12,12 @@
 * Schematic
 
 #+BEGIN_SRC sh :exports results :results raw
+  for i in ./schematic/*.pdf; do
+    FILENAME=${i##*/}
+    echo "[[file:$i][$FILENAME]]\n"
+  done
+#+END_SRC
+#+BEGIN_SRC sh :exports results :results raw
   rm -rf ./schematic/images/
   mkdir ./schematic/images
   convert -density 300 -depth 8 -quality 85 ./schematic/*.pdf ./schematic/images/schematic%02d.png
@@ -27,8 +33,7 @@ fabrication.
 #+BEGIN_SRC sh :exports results :results raw
   for i in ./gerbers/*.zip; do
     FILENAME=${i##*/}
-    BASENAME=${FILENAME%.*}
-    echo "[[file:$i][$BASENAME]]\n"
+    echo "[[file:$i][$FILENAME]]\n"
   done
 #+END_SRC
 #+BEGIN_SRC sh :exports results :results raw
