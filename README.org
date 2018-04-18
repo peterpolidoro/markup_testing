@@ -1,66 +1,40 @@
-* ModularServer
+#+TITLE: modular_device_base_3x2
+#+AUTHOR: Peter Polidoro
+#+EMAIL: peterpolidoro@gmail.com
+#+OPTIONS: toc:t title:t |:t ^:nil
 
-  Authors:
+* Repository Information
+  - Title :: {{{title}}}
+  - Author :: {{{author}}}
+  - Email :: {{{email}}}
+  - License :: Open-Source Hardware
 
-  #+BEGIN_EXAMPLE
-      Peter Polidoro <polidorop@janelia.hhmi.org>
-  #+END_EXAMPLE
+* Schematic
 
-  License:
+#+BEGIN_SRC sh :exports results :results raw
+  convert -density 300 -depth 8 -quality 85 ./schematic/*.pdf ./schematic/schematic%02d.png
+  for i in ./schematic/*.png; do
+    echo "[[file:$i]]"
+  done
+#+END_SRC
 
-  #+BEGIN_EXAMPLE
-      BSD
-  #+END_EXAMPLE
+#+RESULTS:
+[[file:./schematic/schematic00.png]]
 
-  This firmware requires at least Arduino Mega level resources, although
-  Teensy\\
-  3.x level resources are preferred. Known to work with the Arduino Mega
-  2560,\\
-  Teensy 3.2, Teensy 3.5, and Teensy 3.6.
+* Gerbers
 
-** Converting Between File Formats
+#+BEGIN_SRC sh :exports results :results raw
+  for i in ./gerbers/*.zip; do
+    BASENAME = basename $i .zip
+    echo "[[file:$i][$BASENAME]]"
+  done
+#+END_SRC
 
-   #+BEGIN_SRC sh
-    pandoc -f markdown_github -t org -o README.org README.md
-   #+END_SRC
+#+RESULTS:
+[[file:./gerbers/modular_device_base_3x2_v1.2.zip][]]
 
-** API NAMES
+* Bill of Materials
 
-   #+BEGIN_SRC js
-    {
-      "id":"getApi",
-      "result":{
-        "firmware":["ModularServer"],
-        "verbosity":"NAMES",
-        "functions":[
-          "getDeviceId",
-          "getDeviceInfo",
-          "getApi",
-          "getPropertyDefaultValues",
-          "setPropertiesToDefaults",
-          "getPropertyValues",
-          "getInterruptInfo",
-          "detachAllInterrupts"
-        ],
-        "parameters":[
-          "firmware",
-          "verbosity"
-        ],
-        "properties":[
-          "serialNumber"
-        ]
-      }
-    }
-   #+END_SRC
-
-** API GENERAL
-
-   [[./api/][API GENERAL]]
-
-** More Detailed Modular Device Information
-
-   [[https://github.com/janelia-modular-devices/modular-devices][modular-devices]]
-
-** Install Library Dependencies
-
-   [[https://github.com/janelia-arduino/arduino-libraries][arduino-libraries]]
+#+BEGIN_SRC sh :exports results :results raw
+  ls ./bom/*.csv
+#+END_SRC

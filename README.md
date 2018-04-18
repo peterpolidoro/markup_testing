@@ -1,60 +1,36 @@
-# ModularServer
+- [Repository Information](#org03a1e76)
+- [Schematic](#org6eb68df)
+- [Gerbers](#org5a068f6)
+- [Bill of Materials](#org0d8e7cb)
 
-Authors:
 
-    Peter Polidoro <polidorop@janelia.hhmi.org>
 
-License:
+<a id="org03a1e76"></a>
 
-    BSD
+# Repository Information
 
-This firmware requires at least Arduino Mega level resources, although Teensy
-3.x level resources are preferred. Known to work with the Arduino Mega 2560,
-Teensy 3.2, Teensy 3.5, and Teensy 3.6.
+-   **Title:** modular\_device\_base\_3x2
+-   **Author:** Peter Polidoro
+-   **Email:** peterpolidoro@gmail.com
+-   **License:** Open-Source Hardware
 
-## Converting Between File Formats
 
-```shell
-pandoc -f markdown_github -t org -o README.org README.md
-```
+<a id="org6eb68df"></a>
 
-## API NAMES
+# Schematic
 
-```json
-{
-  "id":"getApi",
-  "result":{
-    "firmware":["ModularServer"],
-    "verbosity":"NAMES",
-    "functions":[
-      "getDeviceId",
-      "getDeviceInfo",
-      "getApi",
-      "getPropertyDefaultValues",
-      "setPropertiesToDefaults",
-      "getPropertyValues",
-      "getInterruptInfo",
-      "detachAllInterrupts"
-    ],
-    "parameters":[
-      "firmware",
-      "verbosity"
-    ],
-    "properties":[
-      "serialNumber"
-    ]
-  }
-}
-```
+<./schematic/modular_device_base_3x2.pdf>
 
-## API GENERAL
 
-[API GENERAL](./api/)
+<a id="org5a068f6"></a>
 
-## More Detailed Modular Device Information
+# Gerbers
 
-[modular-devices](https://github.com/janelia-modular-devices/modular-devices)
+<./gerbers/modular_device_base_3x2_v1.2.zip >
 
-## Install Library Dependencies
 
-[arduino-libraries](https://github.com/janelia-arduino/arduino-libraries)
+<a id="org0d8e7cb"></a>
+
+# Bill of Materials
+
+<./bom/bom_pcb_add.csv ./bom/bom_pcb.csv ./bom/digikey_order.csv ./bom/digikey_order_pcb_add.csv ./bom/digikey_order_pcb.csv >

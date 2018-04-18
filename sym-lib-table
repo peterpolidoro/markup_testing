@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name power)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/power.lib)(options "")(descr ""))
+  (lib (name modular_device_base_3x2)(type Legacy)(uri ${KIPRJMOD}/modular_device_base_3x2.lib)(options "")(descr ""))
+)
