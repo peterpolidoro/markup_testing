@@ -1,11 +1,11 @@
-- [Repository Information](#org03a1e76)
-- [Schematic](#org6eb68df)
-- [Gerbers](#org5a068f6)
-- [Bill of Materials](#org0d8e7cb)
+- [Repository Information](#org0621845)
+- [Schematic](#org3c2661b)
+- [Gerbers](#org1dd68f8)
+- [Bill of Materials](#org2955a40)
 
 
 
-<a id="org03a1e76"></a>
+<a id="org0621845"></a>
 
 # Repository Information
 
@@ -15,22 +15,22 @@
 -   **License:** Open-Source Hardware
 
 
-<a id="org6eb68df"></a>
+<a id="org3c2661b"></a>
 
 # Schematic
 
-<./schematic/modular_device_base_3x2.pdf>
+![img](./schematic/images/schematic00.png)
 
 
-<a id="org5a068f6"></a>
+<a id="org1dd68f8"></a>
 
 # Gerbers
 
-<./gerbers/modular_device_base_3x2_v1.2.zip >
+[modular\_device\_base\_3x2\_v1.2](./gerbers/modular_device_base_3x2_v1.2.zip)
 
 
-<a id="org0d8e7cb"></a>
+<a id="org2955a40"></a>
 
 # Bill of Materials
 
-<./bom/bom_pcb_add.csv ./bom/bom_pcb.csv ./bom/digikey_order.csv ./bom/digikey_order_pcb_add.csv ./bom/digikey_order_pcb.csv >
+./bom/bom\_pcb\_add.csv ./bom/bom\_pcb.csv ./bom/digikey\_order.csv ./bom/digikey\_order\_pcb\_add.csv ./bom/digikey\_order\_pcb.csv

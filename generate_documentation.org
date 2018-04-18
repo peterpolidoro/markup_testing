@@ -12,26 +12,23 @@
 * Schematic
 
 #+BEGIN_SRC sh :exports results :results raw
-  convert -density 300 -depth 8 -quality 85 ./schematic/*.pdf ./schematic/schematic%02d.png
-  for i in ./schematic/*.png; do
+  rm -rf ./schematic/images/
+  mkdir ./schematic/images
+  convert -density 300 -depth 8 -quality 85 ./schematic/*.pdf ./schematic/images/schematic%02d.png
+  for i in ./schematic/images/*.png; do
     echo "[[file:$i]]"
   done
 #+END_SRC
-
-#+RESULTS:
-[[file:./schematic/schematic00.png]]
 
 * Gerbers
 
 #+BEGIN_SRC sh :exports results :results raw
   for i in ./gerbers/*.zip; do
-    BASENAME = basename $i .zip
+    FILENAME=${i##*/}
+    BASENAME=${FILENAME%.*}
     echo "[[file:$i][$BASENAME]]"
   done
 #+END_SRC
-
-#+RESULTS:
-[[file:./gerbers/modular_device_base_3x2_v1.2.zip][]]
 
 * Bill of Materials
 
