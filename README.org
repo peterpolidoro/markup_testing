@@ -9,6 +9,13 @@
   - Email :: {{{email}}}
   - License :: Open-Source Hardware
 
+* Images
+
+#+BEGIN_SRC sh :exports results :results raw
+  for i in ./images/*.png; do
+    echo "[[file:$i]]\n"
+  done
+#+END_SRC
 * Schematic
 
 #+BEGIN_SRC sh :exports results :results raw
