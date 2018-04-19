@@ -1,12 +1,12 @@
-- [Repository Information](#org944d983)
-- [Images](#org71a4883)
-- [Schematic](#org7c3de7a)
-- [Gerbers](#org0de8cff)
-- [Bill of Materials](#org17c19fc)
+- [Repository Information](#orgdf6dd71)
+- [Images](#orgbab9317)
+- [Schematic](#org3c834b1)
+- [Gerbers](#org30468be)
+- [Bill of Materials](#org3d0c1e8)
 
 
 
-<a id="org944d983"></a>
+<a id="orgdf6dd71"></a>
 
 # Repository Information
 
@@ -16,16 +16,16 @@
 -   **License:** Open-Source Hardware
 
 
-<a id="org71a4883"></a>
+<a id="orgbab9317"></a>
 
 # Images
 
-![img](./images/bottom.png)
-
 ![img](./images/top.png)
 
+![img](./images/bottom.png)
 
-<a id="org7c3de7a"></a>
+
+<a id="org3c834b1"></a>
 
 # Schematic
 
@@ -34,7 +34,7 @@
 ![img](./schematic/images/schematic00.png)
 
 
-<a id="org0de8cff"></a>
+<a id="org30468be"></a>
 
 # Gerbers
 
@@ -47,7 +47,7 @@ Save gerbers zip file and send to your favorite PCB manufacturer for fabrication
 ![img](./gerbers/images/gerbers01.png)
 
 
-<a id="org17c19fc"></a>
+<a id="org3d0c1e8"></a>
 
 # Bill of Materials
 

@@ -12,9 +12,14 @@
 * Images
 
 #+BEGIN_SRC sh :exports results :results raw
-  for i in ./images/*.png; do
-    echo "[[file:$i]]\n"
-  done
+  TOP=./images/top.png
+  if [ -f $TOP ]; then
+    echo "[[file:$TOP]]\n"
+  fi
+  BOTTOM=./images/bottom.png
+  if [ -f $BOTTOM ]; then
+    echo "[[file:$BOTTOM]]\n"
+  fi
 #+END_SRC
 * Schematic
 
