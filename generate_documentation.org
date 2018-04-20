@@ -6,9 +6,10 @@
 #+EMAIL: peterpolidoro@gmail.com
 #+OPTIONS: title:nil author:nil email:nil toc:t |:t ^:nil
 
-* Setup                                                            :noexport:
-  Export this file to generate documentation in other formats.
+* Description                                                      :noexport:
+  Export this file to generate documentation in desired format.
 
+* Setup                                                            :noexport:
   Dependencies:
   - imagemagik #To generate images
   - texlive-latex-extra #To generate pdf files.
@@ -25,6 +26,7 @@
   - Take photo of top of board and save it to ./images/top.png
   - Take photo of bottom of board and save it to ./images/bottom.png
 
+* Data                                                             :noexport:
   #+TBLNAME: repository-info
   | {{{name}}}    |
   | {{{version}}} |
