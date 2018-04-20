@@ -65,6 +65,7 @@ Save gerbers zip file and send to your favorite PCB manufacturer for fabrication
 [./bom/bom\_pcb.csv](./bom/bom_pcb.csv)
 
 | Item | Reference(s)         | Value                              | Quantity | Description                                           | PartNumber          | Vendor  |
+|------|----------------------|------------------------------------|----------|-------------------------------------------------------|---------------------|---------|
 | 1    | C1 C2 C3 C4 C5       | 10uF                               | 5        | CAP CER 10UF 50V 10% X7S 1210                         | 445-4536-1-ND       | digikey |
 | 2    | C6                   | 0.1uF                              | 1        | CAP CER 0.1UF 100V X7R 1210                           | 399-13229-1-ND      | digikey |
 | 3    | D1 D2                | diode\_schottky\_15V\_1A           | 2        | DIODE SCHOTTKY 15V 1A DO214BA                         | LSM115JE3/TR13CT-ND | digikey |
