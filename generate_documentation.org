@@ -1,0 +1,97 @@
+#+MACRO: name modular_device_base_3x2
+#+MACRO: version 1.2
+#+EXPORT_FILE_NAME: README
+#+TITLE: generate_documentation
+#+AUTHOR: Peter Polidoro
+#+EMAIL: peterpolidoro@gmail.com
+#+OPTIONS: title:nil author:nil email:nil toc:t |:t ^:nil
+
+* Setup                                                            :noexport:
+  Export this file to generate documentation in other formats.
+
+  Dependencies:
+  - imagemagik #To generate images
+  - texlive-latex-extra #To generate pdf files.
+
+  Kicad:
+  - Plot schematic in ./schematic/ in pdf format.
+  - Generate bill of materials.
+  - Plot gerbers for all important layers in ./gerbers/ in gerber format, using
+    Protel filename extensions.
+  - Generate drill file in ./gerbers/ in gerber format.
+  - Print F.SilkS and B.SilkS in ./gerbers/ in pdf format.
+
+  Images:
+  - Take photo of top of board and save it to ./images/top.png
+  - Take photo of bottom of board and save it to ./images/bottom.png
+
+  #+TBLNAME: repository-info
+  | {{{name}}}    |
+  | {{{version}}} |
+
+* Repository Information
+  - Name :: {{{name}}}
+  - Version :: {{{version}}}
+  - Author :: {{{author}}}
+  - Email :: {{{email}}}
+  - License :: Open-Source Hardware
+
+  This board is the base of 3x2 format modular devices. It is a breakout board
+  for the microprocessor, with connections for power, communication, and top
+  boards.
+
+* Images
+
+  #+BEGIN_SRC sh :exports results :results raw
+  TOP=./images/top.png
+  if [ -f $TOP ]; then
+    echo "[[file:$TOP]]\n"
+  fi
+  BOTTOM=./images/bottom.png
+  if [ -f $BOTTOM ]; then
+    echo "[[file:$BOTTOM]]\n"
+  fi
+  #+END_SRC
+* Schematic
+
+  #+BEGIN_SRC sh :exports results :results raw
+  for i in ./schematic/*.pdf; do
+    echo "[[file:$i][$i]]\n"
+  done
+  #+END_SRC
+  #+BEGIN_SRC sh :exports results :results raw
+  rm -rf ./schematic/images/
+  mkdir ./schematic/images
+  convert -density 300 -depth 8 -quality 85 ./schematic/*.pdf ./schematic/images/schematic%02d.png
+  for i in ./schematic/images/*.png; do
+    echo "[[file:$i]]\n"
+  done
+  #+END_SRC
+* Gerbers
+
+  Save gerbers zip file and send to your favorite PCB manufacturer for
+  fabrication.
+
+  #+HEADER: :var name=repository-info[0,0]
+  #+HEADER: :var version=repository-info[1,0]
+  #+BEGIN_SRC sh :exports results :results raw
+    rm ./gerbers/*.zip
+    ZIP_FILENAME=./gerbers/${name}_v${version}.zip
+    zip $ZIP_FILENAME ./gerbers/*.g* ./gerbers/*.drl -q
+    for i in ./gerbers/*.zip; do
+      echo "[[file:$i][$i]]\n"
+    done
+  #+END_SRC
+  #+BEGIN_SRC sh :exports results :results raw
+  rm -rf ./gerbers/images/
+  mkdir ./gerbers/images
+  convert -density 300 -depth 8 -quality 85 -rotate "90" ./gerbers/*.pdf ./gerbers/images/gerbers%02d.png
+  for i in ./gerbers/images/*.png; do
+    echo "[[file:$i]]\n"
+  done
+  #+END_SRC
+* Bill of Materials
+
+  #+BEGIN_SRC sh :exports results :results raw
+  ls ./bom/*.csv
+  #+END_SRC
