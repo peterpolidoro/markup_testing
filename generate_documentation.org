@@ -99,11 +99,13 @@
    #+BEGIN_SRC sh :exports results
   cat ./bom/bom_pcb.csv
    #+END_SRC
+
 ** Additional Parts
    [[./bom/bom_pcb_add.csv][./bom/bom_pcb_add.csv]]
-   #+BEGIN_SRC sh :exports results
-  cat ./bom/bom_pcb_add.csv
-   #+END_SRC
+   #+INCLUDE: "./bom/bom_pcb_add.org"
+  #  #+BEGIN_SRC sh :exports results
+  # cat ./bom/bom_pcb_add.csv
+  #  #+END_SRC
 ** Vendor Parts Lists
    #+BEGIN_SRC sh :exports results :results raw
     for i in ./bom/*order*.csv; do

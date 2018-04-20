@@ -1,15 +1,15 @@
-- [Repository Information](#org39360d2)
-- [Images](#orgcf86de5)
-- [Schematic](#orgb8a828d)
-- [Gerbers](#orgf5e78d6)
-- [Bill of Materials](#org4e341b6)
-  - [PCB Parts](#orgf4376f6)
-  - [Additional Parts](#org40844b2)
-  - [Vendor Parts Lists](#org2d613e6)
+- [Repository Information](#org697d5db)
+- [Images](#orgd053520)
+- [Schematic](#org8e06e5e)
+- [Gerbers](#orgfb95937)
+- [Bill of Materials](#orgb502e8b)
+  - [PCB Parts](#orgb1a9d36)
+  - [Additional Parts](#org5919fe4)
+  - [Vendor Parts Lists](#org5df11c9)
 
 
 
-<a id="org39360d2"></a>
+<a id="org697d5db"></a>
 
 # Repository Information
 
@@ -22,7 +22,7 @@
 This board is the base of 3x2 format modular devices. It is a breakout board for the microprocessor, with connections for power, communication, and top boards.
 
 
-<a id="orgcf86de5"></a>
+<a id="orgd053520"></a>
 
 # Images
 
@@ -31,7 +31,7 @@ This board is the base of 3x2 format modular devices. It is a breakout board for
 ![img](./images/bottom.png)
 
 
-<a id="orgb8a828d"></a>
+<a id="org8e06e5e"></a>
 
 # Schematic
 
@@ -40,7 +40,7 @@ This board is the base of 3x2 format modular devices. It is a breakout board for
 ![img](./schematic/images/schematic00.png)
 
 
-<a id="orgf5e78d6"></a>
+<a id="orgfb95937"></a>
 
 # Gerbers
 
@@ -53,19 +53,18 @@ Save gerbers zip file and send to your favorite PCB manufacturer for fabrication
 ![img](./gerbers/images/gerbers01.png)
 
 
-<a id="org4e341b6"></a>
+<a id="orgb502e8b"></a>
 
 # Bill of Materials
 
 
-<a id="orgf4376f6"></a>
+<a id="orgb1a9d36"></a>
 
 ## PCB Parts
 
 [./bom/bom\_pcb.csv](./bom/bom_pcb.csv)
 
 | Item | Reference(s)         | Value                              | Quantity | Description                                           | PartNumber          | Vendor  |
-|------|----------------------|------------------------------------|----------|-------------------------------------------------------|---------------------|---------|
 | 1    | C1 C2 C3 C4 C5       | 10uF                               | 5        | CAP CER 10UF 50V 10% X7S 1210                         | 445-4536-1-ND       | digikey |
 | 2    | C6                   | 0.1uF                              | 1        | CAP CER 0.1UF 100V X7R 1210                           | 399-13229-1-ND      | digikey |
 | 3    | D1 D2                | diode\_schottky\_15V\_1A           | 2        | DIODE SCHOTTKY 15V 1A DO214BA                         | LSM115JE3/TR13CT-ND | digikey |
@@ -88,24 +87,24 @@ Save gerbers zip file and send to your favorite PCB manufacturer for fabrication
 | 20   | U1                   | MAX6817                            | 1        | IC DEBOUNCER SWITCH DUAL SOT23-6                      | MAX6817EUT+TCT-ND   | digikey |
 
 
-<a id="org40844b2"></a>
+<a id="org5919fe4"></a>
 
 ## Additional Parts
 
 [./bom/bom\_pcb\_add.csv](./bom/bom_pcb_add.csv)
 
-| Item | Function              | Quantity | Description                                                              | PartNumber    | Vendor  |
-| 1    | MODULAR\_DEVICE\_BASE | 1        | USB 2.0 Cable A Male to Micro B Male 2.00m Shielded                      | AE10342-ND    | digikey |
-| 2    | POWER                 | 1        | AC/DC DESKTOP ADAPTER 24V 90W                                            | 62-1187-ND    | digikey |
-| 3    | POWER                 | 1        | 30 WATT DESKTOP POWER SUPPLY 24V                                         | EPS594-ND     | digikey |
-| 4    | POWER                 | 1        | CORD 3COND NEMA PLUG 320-C5                                              | 993-1037-ND   | digikey |
-| 5    | CONNECTORS            | 1        | 14 Positions Header Unshrouded Breakaway Connector 0.100in 2 row SMD     | A106625CT-ND  | digikey |
-| 6    | CONNECTORS            | 2        | 24 Positions Header Unshrouded Breakaway Connector 0.100in 1 row Through | S1011EC-24-ND | digikey |
-| 7    | CONNECTORS            | 1        | CONN JUMPER SHORTING GOLD FLASH                                          | S9001-ND      | digikey |
-| 8    | CABLE                 | 1        | CABLE USB-A TO MICRO USB-B 2M                                            | AE10342-ND    | digikey |
+| Item | Function   | Quantity | Description                                                              | PartNumber    | Vendor  |
+|---- |---------- |-------- |------------------------------------------------------------------------ |------------- |------- |
+| 1    | POWER      | 1        | AC/DC DESKTOP ADAPTER 24V 90W                                            | 62-1187-ND    | digikey |
+| 2    | POWER      | 1        | 30 WATT DESKTOP POWER SUPPLY 24V                                         | EPS594-ND     | digikey |
+| 3    | POWER      | 1        | CORD 3COND NEMA PLUG 320-C5                                              | 993-1037-ND   | digikey |
+| 4    | CONNECTORS | 1        | 14 Positions Header Unshrouded Breakaway Connector 0.100in 2 row SMD     | A106625CT-ND  | digikey |
+| 5    | CONNECTORS | 2        | 24 Positions Header Unshrouded Breakaway Connector 0.100in 1 row Through | S1011EC-24-ND | digikey |
+| 6    | CONNECTORS | 1        | CONN JUMPER SHORTING GOLD FLASH                                          | S9001-ND      | digikey |
+| 7    | CABLE      | 1        | CABLE USB-A TO MICRO USB-B 2M                                            | AE10342-ND    | digikey |
 
 
-<a id="org2d613e6"></a>
+<a id="org5df11c9"></a>
 
 ## Vendor Parts Lists
 
