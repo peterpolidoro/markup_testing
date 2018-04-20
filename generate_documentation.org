@@ -7,7 +7,8 @@
 #+OPTIONS: title:nil author:nil email:nil toc:t |:t ^:nil
 
 * Description                                                      :noexport:
-  Export this file to generate documentation in desired format.
+  This file generates documentation into the desired format when it is exported
+  by emacs org-mode.
 
 * Setup                                                            :noexport:
   Dependencies:
@@ -93,7 +94,19 @@
   done
   #+END_SRC
 * Bill of Materials
-
-  #+BEGIN_SRC sh :exports results :results raw
-  ls ./bom/*.csv
-  #+END_SRC
+** PCB Parts
+   [[./bom/bom_pcb.csv][./bom/bom_pcb.csv]]
+   #+BEGIN_SRC sh :exports results
+  cat ./bom/bom_pcb.csv
+   #+END_SRC
+** Additional Parts
+   [[./bom/bom_pcb_add.csv][./bom/bom_pcb_add.csv]]
+   #+BEGIN_SRC sh :exports results
+  cat ./bom/bom_pcb_add.csv
+   #+END_SRC
+** Vendor Parts Lists
+   #+BEGIN_SRC sh :exports results :results raw
+    for i in ./bom/*order*.csv; do
+      echo "[[file:$i][$i]]\n"
+    done
+   #+END_SRC
