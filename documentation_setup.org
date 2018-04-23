@@ -20,7 +20,8 @@
      - Take photo of top of board and save it to ./images/top.png
      - Take photo of bottom of board and save it to ./images/bottom.png
   4. Fill out information in documentation_configuration.org.
-  5. Export this file to any format to evaluate source blocks.
+  5. Export this file to any format to expand the macros and evaluate the source
+     blocks.
 
 * File Data                                                        :noexport:
   #+TBLNAME: repository-info
@@ -28,7 +29,6 @@
   | {{{version}}} |
 
 * Schematic                                                        :noexport:
-
   #+BEGIN_SRC sh :exports results :results output silent
   rm -rf ./schematic/images/
   mkdir ./schematic/images
@@ -36,10 +36,6 @@
   #+END_SRC
 
 * Gerbers                                                          :noexport:
-
-  Save gerbers zip file and send to your favorite PCB manufacturer for
-  fabrication.
-
   #+HEADER: :var name=repository-info[0,0]
   #+HEADER: :var version=repository-info[1,0]
   #+BEGIN_SRC sh :exports results :results output silent
