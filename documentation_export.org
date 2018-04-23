@@ -1,15 +1,19 @@
-#+INCLUDE: "./documentation_configuration.org::*Header"
+# -*- org-confirm-babel-evaluate: nil -*-
+#+TITLE: documentation_export
 #+EXPORT_FILE_NAME: README
-#+TITLE: generate_documentation
 #+OPTIONS: title:nil author:nil email:nil toc:t |:t ^:nil
+#+INCLUDE: "./documentation_configuration.org::*Header"
 
 * File Information                                                 :noexport:
   This file generates documentation into the desired format when it is exported
   by emacs org-mode.
 
 * File Usage                                                       :noexport:
-  Dependencies:
-  - texlive-latex-extra #To generate pdf files.
+  1. Install dependencies:
+     - texlive-latex-extra #To generate pdf files.
+  2. Fill out information in documentation_configuration.org
+  3. Export documentation_setup.org to any format to evaluate source blocks.
+  4. Export this file to desired format.
 
 * Repository Information
   - Name :: {{{name}}}
@@ -48,8 +52,6 @@
   Save gerbers zip file and send to your favorite PCB manufacturer for
   fabrication.
 
-  #+HEADER: :var name=repository-info[0,0]
-  #+HEADER: :var version=repository-info[1,0]
   #+BEGIN_SRC sh :exports results :results raw
     for i in ./gerbers/*.zip; do
       echo "[[file:$i][$i]]\n"

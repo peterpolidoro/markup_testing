@@ -1,88 +1,60 @@
-#+MACRO: name modular_device_base_3x2
-#+MACRO: version 1.2
+# -*- org-confirm-babel-evaluate: nil -*-
 #+TITLE: documentation_setup
-#+AUTHOR: Peter Polidoro
-#+EMAIL: peterpolidoro@gmail.com
+#+INCLUDE: "./documentation_configuration.org::*Header"
 
-* Description                                                      :noexport:
+* File Information                                                 :noexport:
   This file sets up documentation and prepares the repository for documentation
   exporting.
 
-* Setup                                                            :noexport:
-  Dependencies:
-  - imagemagik #To generate images
+* File Usage                                                       :noexport:
+  1. Install dependencies:
+     - imagemagik #To generate images
+  2. Save files in Kicad:
+     - Plot schematic in ./schematic/ in pdf format.
+     - Generate bill of materials.
+     - Plot gerbers for all important layers in ./gerbers/ in gerber format, using
+       Protel filename extensions.
+     - Generate drill file in ./gerbers/ in gerber format.
+     - Print F.SilkS and B.SilkS in ./gerbers/ in pdf format.
+  3. Take photos of assembled circuit board:
+     - Take photo of top of board and save it to ./images/top.png
+     - Take photo of bottom of board and save it to ./images/bottom.png
+  4. Fill out information in documentation_configuration.org.
+  5. Export this file to any format to evaluate source blocks.
 
-  Kicad:
-  - Plot schematic in ./schematic/ in pdf format.
-  - Generate bill of materials.
-  - Plot gerbers for all important layers in ./gerbers/ in gerber format, using
-    Protel filename extensions.
-  - Generate drill file in ./gerbers/ in gerber format.
-  - Print F.SilkS and B.SilkS in ./gerbers/ in pdf format.
-
-  Images:
-  - Take photo of top of board and save it to ./images/top.png
-  - Take photo of bottom of board and save it to ./images/bottom.png
-
-* Data                                                             :noexport:
+* File Data                                                        :noexport:
   #+TBLNAME: repository-info
   | {{{name}}}    |
   | {{{version}}} |
 
-* Schematic
+* Schematic                                                        :noexport:
 
-  #+BEGIN_SRC sh :exports results :results raw
-  for i in ./schematic/*.pdf; do
-    echo "[[file:$i][$i]]\n"
-  done
-  #+END_SRC
-  #+BEGIN_SRC sh :exports results :results raw
+  #+BEGIN_SRC sh :exports results :results output silent
   rm -rf ./schematic/images/
   mkdir ./schematic/images
   convert -density 300 -depth 8 -quality 85 ./schematic/*.pdf ./schematic/images/schematic%02d.png
-  for i in ./schematic/images/*.png; do
-    echo "[[file:$i]]\n"
-  done
   #+END_SRC
-* Gerbers
+
+* Gerbers                                                          :noexport:
 
   Save gerbers zip file and send to your favorite PCB manufacturer for
   fabrication.
 
   #+HEADER: :var name=repository-info[0,0]
   #+HEADER: :var version=repository-info[1,0]
-  #+BEGIN_SRC sh :exports results :results raw
+  #+BEGIN_SRC sh :exports results :results output silent
     rm ./gerbers/*.zip
     ZIP_FILENAME=./gerbers/${name}_v${version}.zip
     zip $ZIP_FILENAME ./gerbers/*.g* ./gerbers/*.drl -q
-    for i in ./gerbers/*.zip; do
-      echo "[[file:$i][$i]]\n"
-    done
   #+END_SRC
-  #+BEGIN_SRC sh :exports results :results raw
+
+  #+BEGIN_SRC sh :exports results :results output silent
   rm -rf ./gerbers/images/
   mkdir ./gerbers/images
   convert -density 300 -depth 8 -quality 85 -rotate "90" ./gerbers/*.pdf ./gerbers/images/gerbers%02d.png
-  for i in ./gerbers/images/*.png; do
-    echo "[[file:$i]]\n"
-  done
   #+END_SRC
-* Bill of Materials
-** PCB Parts
-   [[./bom/bom_pcb.csv][./bom/bom_pcb.csv]]
-   #+BEGIN_SRC sh :exports results
-  cat ./bom/bom_pcb.csv
-   #+END_SRC
 
+* Bill of Materials                                                :noexport:
+** PCB Parts
 ** Additional Parts
-   [[./bom/bom_pcb_add.csv][./bom/bom_pcb_add.csv]]
-   #+INCLUDE: "./bom/bom_pcb_add.org"
-  #  #+BEGIN_SRC sh :exports results
-  # cat ./bom/bom_pcb_add.csv
-  #  #+END_SRC
 ** Vendor Parts Lists
-   #+BEGIN_SRC sh :exports results :results raw
-    for i in ./bom/*order*.csv; do
-      echo "[[file:$i][$i]]\n"
-    done
-   #+END_SRC
