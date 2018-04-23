@@ -1,28 +1,33 @@
-- [Repository Information](#org697d5db)
-- [Images](#orgd053520)
-- [Schematic](#org8e06e5e)
-- [Gerbers](#orgfb95937)
-- [Bill of Materials](#orgb502e8b)
-  - [PCB Parts](#orgb1a9d36)
-  - [Additional Parts](#org5919fe4)
-  - [Vendor Parts Lists](#org5df11c9)
+- [Repository Information](#org22d65f7)
+  - [Description](#org8bc4243)
+- [Images](#orge04cf68)
+- [Schematic](#orga3655a2)
+- [Gerbers](#orgd00794e)
+- [Bill of Materials](#orgae991a5)
+  - [PCB Parts](#org70692d4)
+  - [Additional Parts](#org960093a)
+  - [Vendor Parts Lists](#orgd37a750)
 
 
-
-<a id="org697d5db"></a>
+<a id="org22d65f7"></a>
 
 # Repository Information
 
 -   **Name:** modular\_device\_base\_3x2
 -   **Version:** 1.2
+-   **License:** Open-Source Hardware
 -   **Author:** Peter Polidoro
 -   **Email:** peterpolidoro@gmail.com
--   **License:** Open-Source Hardware
+
+
+<a id="org8bc4243"></a>
+
+## Description
 
 This board is the base of 3x2 format modular devices. It is a breakout board for the microprocessor, with connections for power, communication, and top boards.
 
 
-<a id="orgd053520"></a>
+<a id="orge04cf68"></a>
 
 # Images
 
@@ -31,7 +36,7 @@ This board is the base of 3x2 format modular devices. It is a breakout board for
 ![img](./images/bottom.png)
 
 
-<a id="org8e06e5e"></a>
+<a id="orga3655a2"></a>
 
 # Schematic
 
@@ -40,7 +45,7 @@ This board is the base of 3x2 format modular devices. It is a breakout board for
 ![img](./schematic/images/schematic00.png)
 
 
-<a id="orgfb95937"></a>
+<a id="orgd00794e"></a>
 
 # Gerbers
 
@@ -53,12 +58,12 @@ Save gerbers zip file and send to your favorite PCB manufacturer for fabrication
 ![img](./gerbers/images/gerbers01.png)
 
 
-<a id="orgb502e8b"></a>
+<a id="orgae991a5"></a>
 
 # Bill of Materials
 
 
-<a id="orgb1a9d36"></a>
+<a id="org70692d4"></a>
 
 ## PCB Parts
 
@@ -87,7 +92,7 @@ Save gerbers zip file and send to your favorite PCB manufacturer for fabrication
 | 20   | U1                   | MAX6817                            | 1        | IC DEBOUNCER SWITCH DUAL SOT23-6                      | MAX6817EUT+TCT-ND   | digikey |
 
 
-<a id="org5919fe4"></a>
+<a id="org960093a"></a>
 
 ## Additional Parts
 
@@ -104,7 +109,7 @@ Save gerbers zip file and send to your favorite PCB manufacturer for fabrication
 | 7    | CABLE      | 1        | CABLE USB-A TO MICRO USB-B 2M                                            | AE10342-ND    | digikey |
 
 
-<a id="org5df11c9"></a>
+<a id="orgd37a750"></a>
 
 ## Vendor Parts Lists
 
