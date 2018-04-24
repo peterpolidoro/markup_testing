@@ -1,1 +1,0 @@
-/home/polidorop/git/kicad/generate_kicad_documentation/export_documentation.org
