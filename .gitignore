@@ -11,3 +11,5 @@ _autosave-*
 *-cache*
 *-rescue*
 .DS_Store
+export_documentation.*
+generate_support_documentation.*

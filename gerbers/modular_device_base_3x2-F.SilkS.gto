@@ -1,12 +1,12 @@
-G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,no-vcs-found-ef6910f~59~ubuntu16.04.1*
-G04 #@! TF.CreationDate,2017-08-09T10:58:01-04:00*
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.0.0-rc2-dev-unknown-482fd86~64~ubuntu16.04.1*
+G04 #@! TF.CreationDate,2018-04-24T12:51:52-04:00*
 G04 #@! TF.ProjectId,modular_device_base_3x2,6D6F64756C61725F6465766963655F62,1.2*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Legend,Top*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW no-vcs-found-ef6910f~59~ubuntu16.04.1) date Wed Aug  9 10:58:01 2017*
+G04 Created by KiCad (PCBNEW 5.0.0-rc2-dev-unknown-482fd86~64~ubuntu16.04.1) date Tue Apr 24 12:51:52 2018*
 %MOMM*%
 %LPD*%
 G01*
