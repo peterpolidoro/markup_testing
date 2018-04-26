@@ -1,16 +1,16 @@
-- [Repository Information](#orgc9cc5ea)
-  - [Description](#org2c21d0d)
-- [Images](#org951a463)
-- [Schematic](#org211200e)
-- [Gerbers](#org1c508f3)
-- [Bill of Materials](#org12fe553)
-  - [PCB Parts](#orga4ce549)
-  - [Additional Parts](#org7f4ff26)
-  - [Vendor Parts Lists](#orgddd0216)
+- [Repository Information](#org51e20a9)
+  - [Description](#org0ab849c)
+- [Images](#orgb2ea05d)
+- [Schematic](#orgaec3a29)
+- [Gerbers](#org0265f05)
+- [Bill of Materials](#org51440ed)
+  - [PCB Parts](#org0b05ecc)
+  - [Additional Parts](#orgb6dd19b)
+  - [Vendor Parts Lists](#org3b286fb)
 
 
 
-<a id="orgc9cc5ea"></a>
+<a id="org51e20a9"></a>
 
 # Repository Information
 
@@ -21,14 +21,14 @@
 -   **Email:** peterpolidoro@gmail.com
 
 
-<a id="org2c21d0d"></a>
+<a id="org0ab849c"></a>
 
 ## Description
 
 This board is the base of 3x2 format modular devices. It is a breakout board for the microprocessor, with connections for power, communication, and top boards.
 
 
-<a id="org951a463"></a>
+<a id="orgb2ea05d"></a>
 
 # Images
 
@@ -37,7 +37,7 @@ This board is the base of 3x2 format modular devices. It is a breakout board for
 ![img](./images/bottom.png)
 
 
-<a id="org211200e"></a>
+<a id="orgaec3a29"></a>
 
 # Schematic
 
@@ -46,36 +46,36 @@ This board is the base of 3x2 format modular devices. It is a breakout board for
 ![img](./schematic/images/schematic00.png)
 
 
-<a id="org1c508f3"></a>
+<a id="org0265f05"></a>
 
 # Gerbers
 
 Save gerbers zip file and send to your favorite PCB manufacturer for fabrication.
 
-[./gerbers/](./gerbers/)
+[./gerbers/modular\_device\_base\_3x2\_v1.2.zip](./gerbers/modular_device_base_3x2_v1.2.zip)
 
-<./gerbers/images/>
+![img](./gerbers/images/gerbers00.png)
 
-<./gerbers/images/>
+![img](./gerbers/images/gerbers01.png)
 
 
-<a id="org12fe553"></a>
+<a id="org51440ed"></a>
 
 # Bill of Materials
 
 
-<a id="orga4ce549"></a>
+<a id="org0b05ecc"></a>
 
 ## PCB Parts
 
 
-<a id="org7f4ff26"></a>
+<a id="orgb6dd19b"></a>
 
 ## Additional Parts
 
 
-<a id="orgddd0216"></a>
+<a id="org3b286fb"></a>
 
 ## Vendor Parts Lists
 
-[./bom/](./bom/)
+[./bom/digikey\_parts.csv](./bom/digikey_parts.csv)
