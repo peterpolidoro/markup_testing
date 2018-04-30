@@ -1,16 +1,16 @@
-- [Repository Information](#org6211d37)
-  - [Description](#orgf3b56ba)
-- [Images](#org25dcdf5)
-- [Schematic](#orgc3f213a)
-- [Gerbers](#orgc74591e)
-- [Bill of Materials](#org53f58c6)
-  - [PCB Parts](#orgc358aa0)
-  - [Additional Parts](#orgaebe1f0)
-  - [Vendor Parts Lists](#org0fca235)
+- [Repository Information](#orgaddb98f)
+  - [Description](#org1a49d95)
+- [Images](#org7c9b547)
+- [Schematic](#orgb1166d3)
+- [Gerbers](#org171b1d5)
+- [Bill of Materials](#org4695bc8)
+  - [PCB Parts](#org82b1a49)
+  - [Additional Parts](#orgf532b51)
+  - [Vendor Parts Lists](#org1737e3d)
 
 
 
-<a id="org6211d37"></a>
+<a id="orgaddb98f"></a>
 
 # Repository Information
 
@@ -21,14 +21,14 @@
 -   **Email:** peterpolidoro@gmail.com
 
 
-<a id="orgf3b56ba"></a>
+<a id="org1a49d95"></a>
 
 ## Description
 
 This board is the base of 3x2 format modular devices. It is a breakout board for the microprocessor, with connections for power, communication, and top boards.
 
 
-<a id="org25dcdf5"></a>
+<a id="org7c9b547"></a>
 
 # Images
 
@@ -37,7 +37,7 @@ This board is the base of 3x2 format modular devices. It is a breakout board for
 ![img](./images/bottom.png)
 
 
-<a id="orgc3f213a"></a>
+<a id="orgb1166d3"></a>
 
 # Schematic
 
@@ -46,7 +46,7 @@ This board is the base of 3x2 format modular devices. It is a breakout board for
 ![img](./schematic/images/schematic00.png)
 
 
-<a id="orgc74591e"></a>
+<a id="org171b1d5"></a>
 
 # Gerbers
 
@@ -59,12 +59,12 @@ Save gerbers zip file and send to your favorite PCB manufacturer for fabrication
 ![img](./gerbers/images/gerbers01.png)
 
 
-<a id="org53f58c6"></a>
+<a id="org4695bc8"></a>
 
 # Bill of Materials
 
 
-<a id="orgc358aa0"></a>
+<a id="org82b1a49"></a>
 
 ## PCB Parts
 
@@ -92,12 +92,12 @@ Save gerbers zip file and send to your favorite PCB manufacturer for fabrication
 | 20   | U1                   | MAX6817                            | 1        | IC DEBOUNCER SWITCH DUAL SOT23-6                      | MAX6817EUT+TCT-ND   | digikey |
 
 
-<a id="orgaebe1f0"></a>
+<a id="orgf532b51"></a>
 
 ## Additional Parts
 
 
-<a id="org0fca235"></a>
+<a id="org1737e3d"></a>
 
 ## Vendor Parts Lists
 

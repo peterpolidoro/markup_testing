@@ -1,4 +1,4 @@
-# Created 2018-04-30 Mon 15:44
+# Created 2018-04-30 Mon 16:23
 #+OPTIONS: title:nil author:nil email:nil toc:t |:t ^:nil
 #+EXPORT_FILE_NAME: ../README
 * Repository Information
@@ -15,19 +15,19 @@ boards.
 * Images
 
 #+RESULTS:
-[[./images/top.png]]
+[[file:./images/top.png]]
 
-[[./images/bottom.png]]
+[[file:./images/bottom.png]]
 
 
 * Schematic
 
 #+RESULTS:
-[[./schematic/modular_device_base_3x2.pdf][./schematic/modular_device_base_3x2.pdf]]
+[[file:./schematic/modular_device_base_3x2.pdf][./schematic/modular_device_base_3x2.pdf]]
 
 
 #+RESULTS:
-[[./schematic/images/schematic00.png]]
+[[file:./schematic/images/schematic00.png]]
 
 
 * Gerbers
@@ -36,13 +36,13 @@ Save gerbers zip file and send to your favorite PCB manufacturer for
 fabrication.
 
 #+RESULTS:
-[[./gerbers/modular_device_base_3x2_v1.2.zip][./gerbers/modular_device_base_3x2_v1.2.zip]]
+[[file:./gerbers/modular_device_base_3x2_v1.2.zip][./gerbers/modular_device_base_3x2_v1.2.zip]]
 
 
 #+RESULTS:
-[[./gerbers/images/gerbers00.png]]
+[[file:./gerbers/images/gerbers00.png]]
 
-[[./gerbers/images/gerbers01.png]]
+[[file:./gerbers/images/gerbers01.png]]
 
 
 * Bill of Materials
@@ -74,4 +74,4 @@ fabrication.
 ** Additional Parts
 ** Vendor Parts Lists
 #+RESULTS:
-[[./bom/digikey_parts.csv][./bom/digikey_parts.csv]]
+[[file:./bom/digikey_parts.csv][./bom/digikey_parts.csv]]
