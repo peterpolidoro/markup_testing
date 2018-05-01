@@ -22,7 +22,6 @@ boards.
 
 * Schematic
 
-#+RESULTS:
 [[./schematic/modular_device_base_3x2.pdf][modular_device_base_3x2.pdf]]
 
 
