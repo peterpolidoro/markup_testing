@@ -1,6 +1,5 @@
-# Created 2018-05-15 Tue 15:22
+# Created 2018-05-15 Tue 15:32
 #+OPTIONS: title:nil author:nil email:nil toc:t |:t ^:nil
-#+EXPORT_FILE_NAME: ../README
 * Repository Information
 
 - Name :: modular_device_base_3x2
