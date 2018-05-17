@@ -1,14 +1,16 @@
-# Created 2018-05-16 Wed 10:54
+# Created 2018-05-17 Thu 12:59
 #+OPTIONS: title:nil author:nil email:nil toc:t |:t ^:nil
 * Repository Information
 
 - Name :: modular_device_base_3x2
 - Version :: 1.2
 - License :: Open-Source Hardware
+- URL :: https://github.com/janelia-kicad/modular_device_base_3x2
 - Author :: Peter Polidoro
 - Email :: peterpolidoro@gmail.com
 
 ** Description
+
 This board is the base of 3x2 format modular devices. It is a breakout board
 for the microprocessor, with connections for power, communication, and top
 boards.
@@ -78,3 +80,18 @@ fabrication.
 ** Vendor Parts Lists
 
 [[file:./bom/digikey_parts.csv][./bom/digikey_parts.csv]]
+
+[[file:./bom/supplemental_digikey_parts.csv][./bom/supplemental_digikey_parts.csv]]
+
+* Supplemental Documentation
+
+** Assembly Instructions
+
+- Cut the bottom trace on the Teensy board that connects the 5V pads according
+  to these instructions [[https://www.pjrc.com/teensy/external_power.html]].
+- Solder through hole header pins into every Teensy 0.1 inch header hole.
+- Solder surface mount header pins onto the bottom of the Teensy making sure
+  they are properly aligned.
+- Solder surface mount and through hole components onto the pcb.
+- Solder the Teensy into the pcb making sure it is properly aligned.
+- Connect header jumper to RED LED enable pins.
